@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" id="vp">
+	<title>Document</title>
+	<script type="text/javascript">
+        // 把尺寸放大N倍（N是window.devicePixelRatio）
+        var wd = document.documentElement.clientWidth*window.devicePixelRatio/10;
+        //物理像素*设备像素比=真实像素
+        document.getElementsByTagName("html")[0].style.fontSize = wd + "px";
+        // 把屏幕的倍率缩小到N分之一（N是window.devicePixelRatio）
+        var scale = 1/window.devicePixelRatio;
+        var mstr = 'initial-scale='+ scale +', maximum-scale='+ scale +', minimum-scale='+ scale +', user-scalable=no';
+        document.getElementById("vp").content = mstr;
+    </script>
+    <script src="js/jquery-1.10.1.min.js"></script>
+    <script src="js/love.js"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/love.css">
+</head>
+<body>
+	<div id="bigbox">
+		<div class="application">
+			<img src="img/lin.jpeg" class="img">
+			<p>小姐姐你好漂亮哦~</p>
+			<!-- <img src="img/img1.gif" class="img1"> -->	
+		</div>
+		<div class="character">
+			<p>做我女朋友好不好？</p>
+		</div>
+		<div class="choice">
+			<div class="yes">
+				<p>好嘛~</p>
+			</div>
+			<div class="no">
+				<p>不好？</p>
+			</div>
+		</div>
+		<!-- <div class="popup"></div> -->
+	</div>
+	<div id="success" class="hide">
+		<img src="img/timg.gif" alt="">
+	</div>
+</body>
+</html>
