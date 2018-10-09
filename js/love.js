@@ -15,25 +15,25 @@ $(function(){
         $(".no").click(function(){
             switch(i){
                 case 1:
-                    alert("工资上交");
+                    alert("比多次机会你");
                     break;
                 case 2:
-                    alert("家务全包");
+                    alert("唔系哩边啊");
                     break;
                 case 3:
-                    alert("房产证写你的名字");
+                    alert("<—— 果边啊");
                     break;
 				case 4:
-                    alert("保大");
+                    alert("甘姐系无计倾啦~");
                     break;
                 case 5:
-                    alert("我妈会游泳");
+                    alert("我生气了！");
                     break;
                 case 6:
-                    alert("不跟你吵架，会撒娇 会卖萌");
+                    alert("氹唔翻果种！");
                     break;
                 default:
-                    alert("答应我吧");
+                    alert("我就系一条无人要噶可怜虫~");
             }
             i++;
         });
